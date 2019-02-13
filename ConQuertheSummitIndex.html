@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>לכבוש את הפסגה</title>
+    <meta name="description" content="לכבוש את הפסגה" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="ConquerTheSummit.html">
+                <img class="logo" src="images/logo1-07.png" /> 
+                <p>לכבוש את הפסגה</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p>
+                <img src="images/logo1-07.png" width="100"/><br />
+                אפיון ופיתוח: שובל נתן ועינת פולר<br />
+                פותח במסגרת פרויקט בקורסים: <br />
+                סביבות לימוד אינטראקטיביות 1 ואנימציה, תשע"ט<br /><br />
+                קרדיט תמונת יצחק רבין:<br />
+                Yaakov Saar<br />
+                 <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a><br />
+                <img src="images/logoHIT.png" width="90" /><br />
+                <a href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a><br />
+                מכון טכנולוגי חולון
+            </p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>כאן יכנסו התמונות/הסרטון המסביר כיצד לשחק</p>
+        </div>
+
+        <div id="gameArea" class="">
+              <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="ConquerTheSummit.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
